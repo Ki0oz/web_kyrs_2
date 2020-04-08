@@ -1,0 +1,735 @@
+@font-face{
+  font-family: 'OpenSansRegular';
+  src: url(../font/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'OpenSansBold';
+  src: url(../font/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+	margin: 0;
+}
+.main_sport{
+	overflow: hidden;
+}
+.players_section{
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	min-height: 960px;
+	position: relative;
+	background-image: url(../img/football_1920.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.header::after {
+	content:"";
+	position: absolute;
+	top: 0px;
+	left: 0px; 
+	width: 100%;
+	height: 100%;
+	background-color: #02002c;
+	opacity: 0.9;
+}
+
+.logo{
+    width: 250px;
+    position: relative;
+    padding-top: 50px;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.wrapper{	
+	margin-right: auto; 
+	margin-left:  auto; 
+	max-width: 1920px;
+	padding-right: 180px;
+	padding-left:  180px;
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+.header_title{
+	position: relative;
+	display: inline-block;
+	font-size: 90px;
+	font-family: OpenSansBold;
+	text-transform: uppercase;
+	line-height: 100px;
+	letter-spacing: 5px;
+	color: #fff;
+	z-index: 2;
+	margin-top: 250px;
+}
+
+.title_add{
+	float: right;
+	line-height: 100px;
+	letter-spacing: 5px;
+	padding-top: 1%;
+}
+
+.btn_smart{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+	width: 310px;
+	height: 75px;
+	border-radius: 105px;
+	font-size: 14px;
+	margin-right: 5%;
+	background-color: #5e42b0;
+	padding: 0 20px;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: OpenSansRegular;
+}
+
+.btn_span{
+	font-family: OpenSansBold;
+}
+.btn-icon{
+	display: inline-block;
+    float: left;
+    padding: 0 20px;
+}
+.btn-icon svg{
+	width: 40px;
+}
+.btn_text{
+	display: block;
+	text-align: left;
+}
+.btn_text strong{
+	display: block;
+}
+
+.type_title {
+    font-size: 80px;
+    display: flex;
+    font-family: OpenSansBold;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    text-align: center;
+    padding-left: 53%;
+}
+.type_title_left{
+	padding-top: 60px;
+	font-size: 80px;
+	font-family: OpenSansBold;
+	text-transform: uppercase;
+	color: #e7e7e7;
+	text-align: left;
+}
+
+.flex_right{
+	width: 100%;
+	padding-bottom: 1%;
+}
+
+.flex_left{
+	padding-bottom: 1%;
+}
+
+.flex_right:nth-child(4){
+	background-color: #f6f4fa;
+}
+.flex_right:nth-child(5){
+	background-color: #5e42b0;
+	color: #fff;
+}
+
+.flex_left:nth-child(4){
+	background-color: #f6f4fa;
+}
+
+.flex_left:nth-child(5){
+	background-color: #0a0e34;
+	color: #fff;
+}
+
+.badge-numbers{
+	position: relative;
+	font-size: 50%;
+	top: -10px;
+	font-family: OpenSansBold;
+	color: #000;
+	border-bottom: 4px solid #5e42b0;
+}
+
+.badge-numbers-gray{
+	position: relative;
+	font-size: 50%;
+	top: -10px;
+	font-family: OpenSansBold;
+	color: #000;
+	border-bottom: 4px solid #c1c1c1;
+}
+.badge-numbers-gray-nom{
+	position: relative;
+	font-size: 50%;
+	top: -10px;
+	font-family: OpenSansBold;
+	color: #5e42b0;
+	border-bottom: 4px solid #c1c1c1;
+}
+.football_img{
+	position: absolute;
+	right: 50%;
+}
+.basketball_img{
+	position: absolute;
+	left: 43%;
+}
+.section{
+	width: 58%;
+	margin-left: 54%;
+}
+
+.section_players{
+	width: 55%;
+}
+.section_players p{
+	font-size: 20px;
+	font-family: OpenSansRegular;
+}
+.name_section{
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: OpenSansBold;
+	color: #c1c1c1;
+}
+
+.section p{
+	font-size: 20px;
+	font-family: OpenSansRegular;
+}
+
+.work_section{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.item:nth-child(1){
+	background-image: url(../img/be-active.jpg);
+}
+
+.item:nth-child(4){
+	background-image: url(../img/find-contact.jpg);
+}
+
+.item:nth-child(5){
+	background-image: url(../img/work-it.jpg);
+}
+
+.txt-cont {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.txt-cont h3 {
+	display: inline-block;
+  	position: relative;
+ 	font-size: 24px;
+ 	width: 65%;
+ 	text-align: left;
+    left: 110px;
+    padding-bottom: 50px;
+    font-family: OpenSansRegular;
+}
+.txt-cont strong{
+	display: block;
+	font-size: 80px;
+	color: #e7e7e7;
+	margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+
+.txt-cont .badge {
+	padding: 60px;
+	background-color: #5e42b0;
+	position: absolute;
+	left: calc(0% - 180px);
+	top: calc(100% - 315px);
+	color: #fff;
+}
+
+.txt-cont .badge-left{
+	padding: 60px;
+  	background-color: #5e42b0;
+  	position: absolute;    
+  	left: calc(100% - -150px);
+    top: calc(100% - 294px);
+    color: #fff;
+    z-index: 2;
+}
+
+
+
+.footer_surface{
+	width: 100%;
+	min-height: 960px;
+	position: relative;
+	background-image: url(../img/game_1920.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer_surface::after {
+	content:"";
+	position: absolute;
+	top: 0px;
+	left: 0px; 
+	width: 100%;
+	height: 100%;
+	background-color: #02002c;
+	opacity: 0.9;
+}
+
+.logo_footer_up{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+.logo_sur{
+    width: 145px;
+    height: 145px;
+    border-radius: 35px;
+    background-color: #694ac1;
+    float: left;
+    margin-right: 35px;
+	margin-top: 35px;
+}
+
+.logo_sur svg{
+	padding: 25px 15px;
+	width: 105px;
+}
+
+.footer_title{
+	float: right;
+	display: block;
+	text-align: left;
+	letter-spacing: 5px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: OpenSansRegular;
+	z-index: 2;
+	color: #fff;
+}
+
+.footer_title strong{
+	display: block;
+	font-size: 80px;
+}
+
+.btn_smart_down{
+	width: 90%;
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 120px 0 270px;
+}
+
+.logo_down{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.btn_smart_down .button{
+	width: 45%;
+	max-width: 310px;
+}
+
+@media (max-width: 1260px) {
+
+	.logo_sur{
+		margin: 35px auto;
+		float: none;
+	}
+	.footer_title{
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 1130px){
+	.wrapper{
+		padding:0;
+	}
+}
+
+
+@media (max-width: 768px) {
+	
+	.header{
+		background-image: url(../img/football_767.jpg);
+	}
+
+	.wrapper{
+		max-width: 768px;
+		padding-right: 33px;
+		padding-left:  33px;
+	}
+
+	.header_title{
+		font-size: 64px;
+		letter-spacing: 1px;
+		padding-top: 15%;
+		margin: 0;
+	}
+
+	.title_add{
+		padding: 0;
+		margin-left: 15%;
+	}
+
+	.logo{
+		width: 205px;
+	}
+
+	.btn_smart{
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0;
+		padding-top: 25%;
+		left: 1%;
+	}
+
+
+	.football_img{
+		margin-top: 100px;
+		right: 55%;
+	}
+
+	.basketball_img{
+		max-width: 100%;
+		padding-top: 30px;
+		clear:both;
+	}
+
+	.type_title{
+		padding-top: 45px;
+    	padding-left: 39%;
+    	margin: 0;
+	}
+
+	.type_title_left{
+		margin: 0;
+	}
+	.section{
+		margin-left: 38%;
+	}
+
+	.name_section{
+		font-size: 32px;
+	}
+
+	.section p{
+		font-size: 16px;
+	}
+
+	.section_players p{
+		font-size: 16px;
+	}
+
+	.item{
+		flex: 100%;
+	}
+	.item:nth-child(1){
+		background-image: url(../img/be-active_960.jpg);
+		height: 585px;
+		order: 1;
+	}
+	.item:nth-child(2){
+		height: 370px;
+		order: 2;
+	}
+	.item:nth-child(4){
+		background-image: url(../img/find-contact_960.jpg);
+		height: 585px;
+		order: 3;
+	}
+	.item:nth-child(3){
+		height: 370px;
+		order: 4;
+	}
+	.item:nth-child(5){
+		background-image: url(../img/work-it_960.jpg);
+		height: 585px;
+		order: 5;
+	}
+	.item:nth-child(6){
+		height: 370px;
+		order: 6;
+	}
+	
+	.img_work {
+		margin: 0;
+		padding: 0;
+
+	}
+	.txt-cont{
+		top: 0;
+		margin: 0;
+	}
+	.txt-cont h3{
+		top: 35px;
+   	 	left: 20px;
+    	width: 90%;
+	}
+
+	.txt-cont strong{
+		margin:0;
+	}
+	.txt-cont .badge {
+   	    left: calc(0% - 0px);
+    	top: calc(0% - 160px);
+	}
+
+	.txt-cont .badge-left{
+	    left: calc(0% - 0px);
+    	top: calc(0% - 160px);
+	}
+
+	.footer_surface{
+		background-image: url(../img/game_1280.jpg);
+		background-position: center center;
+	}
+
+	.logo_footer_up{
+		width: 100%;
+		margin: 120px auto;
+
+	}
+
+
+	.footer_title strong{
+		margin: 0;
+	    padding: 0;
+	    letter-spacing: initial;
+	    text-align: center;
+	    display: flex;
+	    flex-wrap: nowrap;
+	}
+
+	.footer_title{
+		font-size: 36px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.btn_smart_down{
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0;
+		padding: 100px 0 20px;
+		left: 1%;
+	}	
+}
+
+@media screen and (max-width: 590px) {
+	.btn-icon svg{
+		width: 30px;
+	}
+	.btn-icon{
+		padding: 0 10px;
+	}
+	.button{
+		font-size: 10px;
+	}
+	.footer_title strong{
+		font-size: 50px;
+	}
+	.footer_title{
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.header{
+		min-height: 568px;
+	}
+	.header_title{
+		width: 100%;
+		padding-top: 100px;
+		font-size: 28px;
+		line-height: 10px;
+		letter-spacing: normal;
+		margin: 0;
+	}
+
+	.title_add{
+		float: right;
+		line-height: 30px;
+		padding-top: 30px;
+		letter-spacing: normal;
+	}
+
+	.wrapper{
+		max-width: 320px;
+		padding-right: 20px;
+		padding-left:  20px;
+	}
+
+	.btn_smart{
+		flex-wrap: wrap;
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.button{
+		width: 100%;
+		margin-top: 30px;
+		height: 35px; 
+		padding: 0 50px;
+	}
+
+	.btn-icon svg{
+		width: 20px;
+	}
+
+	.btn_text{
+		font-size: 8px;
+	}
+
+	.type_title{
+		font-size: 50px;
+		padding-top: 10px;
+		padding-left: 30px;
+		margin-bottom: 280px;
+	}
+
+	.football_img{
+	    right: 15%;
+	    margin-top: 80px;
+	}
+
+
+	.section{
+		width: 100%;
+		margin: 0;
+	}
+
+	.name_section{
+		font-size: 23px;
+	}
+
+	.section p{
+		font-size: 15px;
+	}
+
+	.type_title_left{
+		font-size: 50px;
+		padding-top: 10px;
+		margin-bottom: 280px;
+	}
+
+	.basketball_img{
+		left: 2%;
+	    padding-top: 90px;
+	}
+
+	.section_players{
+		width: 100%;
+	}
+
+	.section_players p{
+		font-size: 15px;
+	}
+
+	.txt-cont .badge{
+		padding: 35px;
+		top: calc(0% - 100px);
+	}
+
+	.txt-cont h3{
+		font-size: 16px;
+		top: 15px;
+	}
+
+	.txt-cont strong{
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+
+	.txt-cont .badge-left{
+		padding: 35px;
+		top: calc(0% - 100px);
+	}
+	
+	.item:nth-child(1),
+	.item:nth-child(3),
+	.item:nth-child(5){
+		height: 350px;
+	}
+	.item:nth-child(2),
+	.item:nth-child(4),
+	.item:nth-child(6){
+		height: 212px;
+	}
+
+}
+
+
+
+
+
+
+
+    
