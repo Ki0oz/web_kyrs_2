@@ -5,7 +5,7 @@
   font-style: normal;
 }
 @font-face{
-  font-family: 'OpenSansBold';
+  font-family: 'OpenSans';
   src: url(../font/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: normal;
@@ -66,7 +66,8 @@ body {
 	position: relative;
 	display: inline-block;
 	font-size: 90px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 100px;
 	letter-spacing: 5px;
@@ -79,7 +80,7 @@ body {
 	float: right;
 	line-height: 100px;
 	letter-spacing: 5px;
-	padding-top: 1%;
+	padding-top: 10px;
 }
 
 .btn_smart{
@@ -97,7 +98,7 @@ body {
 	height: 75px;
 	border-radius: 105px;
 	font-size: 14px;
-	margin-right: 5%;
+	margin-right: 60px;
 	background-color: #5e42b0;
 	padding: 0 20px;
 	border: none;
@@ -107,7 +108,8 @@ body {
 }
 
 .btn_span{
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 }
 .btn-icon{
 	display: inline-block;
@@ -128,7 +130,8 @@ body {
 .type_title {
     font-size: 80px;
     display: flex;
-    font-family: OpenSansBold;
+    font-family: OpenSans;
+	font-weight: bold;
     text-transform: uppercase;
     color: #e7e7e7;
     text-align: center;
@@ -137,7 +140,8 @@ body {
 .type_title_left{
 	padding-top: 60px;
 	font-size: 80px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #e7e7e7;
 	text-align: left;
@@ -145,26 +149,33 @@ body {
 
 .flex_right{
 	width: 100%;
-	padding-bottom: 1%;
+	padding-bottom: 20px;
 }
 
-.flex_left{
-	padding-bottom: 1%;
-}
-
-.flex_right:nth-child(4){
+.flex_right_mid{
+	width: 100%;
+	padding-bottom: 20px;
 	background-color: #f6f4fa;
 }
-.flex_right:nth-child(5){
+
+.flex_right_down{
+	width: 100%;
+	padding-bottom: 20px;
 	background-color: #5e42b0;
 	color: #fff;
 }
 
-.flex_left:nth-child(4){
+.flex_left{
+	padding-bottom: 20px;
+}
+
+.flex_left_mid{
+	padding-bottom: 20px;
 	background-color: #f6f4fa;
 }
 
-.flex_left:nth-child(5){
+.flex_left_down{
+	padding-bottom: 20px;
 	background-color: #0a0e34;
 	color: #fff;
 }
@@ -173,7 +184,8 @@ body {
 	position: relative;
 	font-size: 50%;
 	top: -10px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	color: #000;
 	border-bottom: 4px solid #5e42b0;
 }
@@ -182,7 +194,8 @@ body {
 	position: relative;
 	font-size: 50%;
 	top: -10px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	color: #000;
 	border-bottom: 4px solid #c1c1c1;
 }
@@ -190,7 +203,8 @@ body {
 	position: relative;
 	font-size: 50%;
 	top: -10px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	color: #5e42b0;
 	border-bottom: 4px solid #c1c1c1;
 }
@@ -217,7 +231,8 @@ body {
 .name_section{
 	text-transform: uppercase;
 	font-size: 36px;
-	font-family: OpenSansBold;
+	font-family: OpenSans;
+	font-weight: bold;
 	color: #c1c1c1;
 }
 
@@ -430,13 +445,13 @@ body {
 	.header_title{
 		font-size: 64px;
 		letter-spacing: 1px;
-		padding-top: 15%;
+		padding-top: 100px;
 		margin: 0;
 	}
 
 	.title_add{
 		padding: 0;
-		margin-left: 15%;
+		margin-left: 100px;
 	}
 
 	.logo{
@@ -447,8 +462,8 @@ body {
 		display: flex;
 		flex-wrap: nowrap;
 		padding: 0;
-		padding-top: 25%;
-		left: 1%;
+		padding-top: 150px;
+		left: 20px;
 	}
 
 
@@ -580,7 +595,7 @@ body {
 		flex-wrap: nowrap;
 		padding: 0;
 		padding: 100px 0 20px;
-		left: 1%;
+		left: 20px;
 	}	
 }
 
