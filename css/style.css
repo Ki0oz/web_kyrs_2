@@ -112,30 +112,30 @@ body {
 	font-weight: bold;
 }
 .btn-icon{
+	width: 40px;
 	display: inline-block;
     float: left;
     padding: 0 20px;
-}
-.btn-icon svg{
-	width: 40px;
 }
 .btn_text{
 	display: block;
 	text-align: left;
 }
-.btn_text strong{
+.app_upper{
 	display: block;
+	font-family: OpenSans;
+	font-weight: bold;
 }
 
 .type_title {
     font-size: 80px;
-    display: flex;
-    font-family: OpenSans;
+	font-family: OpenSans;
 	font-weight: bold;
-    text-transform: uppercase;
-    color: #e7e7e7;
-    text-align: center;
-    padding-left: 53%;
+	text-transform: uppercase;
+	color: #e7e7e7;
+	left: 50%;
+	position: relative;
+	margin-left: 45px;
 }
 .type_title_left{
 	padding-top: 60px;
@@ -217,8 +217,10 @@ body {
 	left: 43%;
 }
 .section{
-	width: 58%;
-	margin-left: 54%;
+	position: relative;
+	left: 50%;
+	margin-left: 45px;
+	width: 50%;
 }
 
 .section_players{
@@ -281,12 +283,10 @@ body {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    position: absolute;
-    top: 35%;
-    left: 0;
+    margin-top: 200px;
 }
 
-.txt-cont h3 {
+ .cont_title{
 	display: inline-block;
   	position: relative;
  	font-size: 24px;
@@ -296,7 +296,7 @@ body {
     padding-bottom: 50px;
     font-family: OpenSansRegular;
 }
-.txt-cont strong{
+.upper_txt{
 	display: block;
 	font-size: 80px;
 	color: #e7e7e7;
@@ -305,21 +305,19 @@ body {
 }
 
 
-.txt-cont .badge {
+.badge {
 	padding: 60px;
 	background-color: #5e42b0;
 	position: absolute;
-	left: calc(0% - 180px);
-	top: calc(100% - 315px);
+	left: -190px;
 	color: #fff;
 }
 
-.txt-cont .badge-left{
+.badge-left{
 	padding: 60px;
   	background-color: #5e42b0;
   	position: absolute;    
-  	left: calc(100% - -150px);
-    top: calc(100% - 294px);
+  	left: 760px;
     color: #fff;
     z-index: 2;
 }
@@ -364,7 +362,7 @@ body {
 	margin-top: 35px;
 }
 
-.logo_sur svg{
+.logo_sur_d{
 	padding: 25px 15px;
 	width: 105px;
 }
@@ -381,7 +379,7 @@ body {
 	color: #fff;
 }
 
-.footer_title strong{
+.upper_txt_d{
 	display: block;
 	font-size: 80px;
 }
@@ -404,10 +402,7 @@ body {
     margin: 50px auto;
 }
 
-.btn_smart_down .button{
-	width: 45%;
-	max-width: 310px;
-}
+
 
 @media (max-width: 1260px) {
 
@@ -480,15 +475,14 @@ body {
 
 	.type_title{
 		padding-top: 45px;
-    	padding-left: 39%;
-    	margin: 0;
+		margin: 0;
 	}
 
 	.type_title_left{
 		margin: 0;
 	}
 	.section{
-		margin-left: 38%;
+		margin-left: 0;
 	}
 
 	.name_section{
@@ -543,23 +537,23 @@ body {
 		top: 0;
 		margin: 0;
 	}
-	.txt-cont h3{
+	.cont_title{
 		top: 35px;
    	 	left: 20px;
     	width: 90%;
 	}
 
-	.txt-cont strong{
+	.upper_txt{
 		margin:0;
 	}
-	.txt-cont .badge {
-   	    left: calc(0% - 0px);
-    	top: calc(0% - 160px);
+	.badge {
+   	    left: 0;
+   	    top: -160px;
 	}
 
-	.txt-cont .badge-left{
-	    left: calc(0% - 0px);
-    	top: calc(0% - 160px);
+	.badge-left{
+	    left: 0;
+    	top: -160px;
 	}
 
 	.footer_surface{
@@ -574,7 +568,7 @@ body {
 	}
 
 
-	.footer_title strong{
+	.upper_txt_d{
 		margin: 0;
 	    padding: 0;
 	    letter-spacing: initial;
@@ -600,7 +594,7 @@ body {
 }
 
 @media screen and (max-width: 590px) {
-	.btn-icon svg{
+	.btn_ic{
 		width: 30px;
 	}
 	.btn-icon{
@@ -630,10 +624,10 @@ body {
 	}
 
 	.title_add{
-		float: right;
 		line-height: 30px;
-		padding-top: 30px;
+		padding-top: 11px;
 		letter-spacing: normal;
+		margin-left: 42px;
 	}
 
 	.wrapper{
@@ -650,12 +644,12 @@ body {
 
 	.button{
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 20px;
 		height: 35px; 
-		padding: 0 50px;
+		padding: 0 30px;
 	}
 
-	.btn-icon svg{
+	.btn_ic{
 		width: 20px;
 	}
 
@@ -666,7 +660,7 @@ body {
 	.type_title{
 		font-size: 50px;
 		padding-top: 10px;
-		padding-left: 30px;
+		left: 0;
 		margin-bottom: 280px;
 	}
 
@@ -679,6 +673,7 @@ body {
 	.section{
 		width: 100%;
 		margin: 0;
+		left: 0;
 	}
 
 	.name_section{
@@ -696,7 +691,7 @@ body {
 	}
 
 	.basketball_img{
-		left: 2%;
+		left: 10px;
 	    padding-top: 90px;
 	}
 
@@ -708,43 +703,75 @@ body {
 		font-size: 15px;
 	}
 
-	.txt-cont .badge{
+	.badge{
 		padding: 35px;
-		top: calc(0% - 100px);
+		top: -100px;
 	}
 
-	.txt-cont h3{
+	.cont_title{
 		font-size: 16px;
 		top: 15px;
 	}
 
-	.txt-cont strong{
+	.upper_txt{
 		font-size: 28px;
 		margin-bottom: 10px;
 	}
 
-	.txt-cont .badge-left{
-		padding: 35px;
-		top: calc(0% - 100px);
+	.footer_surface{
+		min-height: 570px;
+		background-image: url(../img/game_767.jpg);
 	}
-	
+
+	.badge-left{
+		padding: 35px;
+		top: -100px;
+	}
+
+	.logo_footer_up{
+		margin: 0;
+	}
+
+	.logo_sur{
+		margin-top: 110px;
+		width: 75px;
+		height: 75px;
+		border-radius: 15px;
+	}
+	.logo_sur_d{
+		padding: 10px 8px;
+		width: 60px;
+	}
+
+	.upper_txt_d{
+		display: block;
+		font-size: 32px;
+	}
+	.footer_title{
+		text-align: center;
+		font-size: 14px;
+		letter-spacing: normal;
+	}
+
+	.btn_smart_down{
+		display: block;
+		left: 0;
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.logo_down{
+		width: 160px;
+	}
 	.item:nth-child(1),
-	.item:nth-child(3),
+	.item:nth-child(4),
 	.item:nth-child(5){
 		height: 350px;
 	}
 	.item:nth-child(2),
-	.item:nth-child(4),
+	.item:nth-child(3),
 	.item:nth-child(6){
 		height: 212px;
 	}
 
 }
-
-
-
-
-
-
-
-    
