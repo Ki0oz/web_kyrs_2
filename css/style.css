@@ -133,7 +133,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #e7e7e7;
-	left: 50%;
+	left: 780px;
 	position: relative;
 	margin-left: 45px;
 }
@@ -210,21 +210,21 @@ body {
 }
 .football_img{
 	position: absolute;
-	right: 50%;
+	left: 400px;
 }
 .basketball_img{
 	position: absolute;
-	left: 43%;
+	right: 40px;
 }
 .section{
 	position: relative;
-	left: 50%;
+	left: 780px;
 	margin-left: 45px;
-	width: 50%;
+	max-width: 800px;
 }
 
 .section_players{
-	width: 55%;
+	max-width: 800px;
 }
 .section_players p{
 	font-size: 20px;
@@ -286,11 +286,11 @@ body {
     margin-top: 200px;
 }
 
- .cont_title{
+.cont_title{
 	display: inline-block;
   	position: relative;
  	font-size: 24px;
- 	width: 65%;
+ 	max-width: 600px;
  	text-align: left;
     left: 110px;
     padding-bottom: 50px;
@@ -336,8 +336,8 @@ body {
 .footer_surface::after {
 	content:"";
 	position: absolute;
-	top: 0px;
-	left: 0px; 
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #02002c;
@@ -385,7 +385,7 @@ body {
 }
 
 .btn_smart_down{
-	width: 90%;
+	width: 100%;
 	position: relative;
 	z-index: 2;
 	margin-left: auto;
@@ -456,24 +456,22 @@ body {
 	.btn_smart{
 		display: flex;
 		flex-wrap: nowrap;
-		padding: 0;
 		padding-top: 150px;
 		left: 20px;
 	}
 
-
 	.football_img{
 		margin-top: 100px;
-		right: 55%;
+		left: -170px;
 	}
 
 	.basketball_img{
-		max-width: 100%;
 		padding-top: 30px;
-		clear:both;
+		right: 0;
 	}
 
 	.type_title{
+		left: 250px;
 		padding-top: 45px;
 		margin: 0;
 	}
@@ -483,6 +481,12 @@ body {
 	}
 	.section{
 		margin-left: 0;
+		left: 250px;
+		max-width: 440px;
+	}
+
+	.section_players {
+		max-width: 400px;
 	}
 
 	.name_section{
@@ -506,7 +510,7 @@ body {
 		order: 1;
 	}
 	.item:nth-child(2){
-		height: 370px;
+		height: 320px;
 		order: 2;
 	}
 	.item:nth-child(4){
@@ -515,7 +519,7 @@ body {
 		order: 3;
 	}
 	.item:nth-child(3){
-		height: 370px;
+		height: 320px;
 		order: 4;
 	}
 	.item:nth-child(5){
@@ -524,7 +528,7 @@ body {
 		order: 5;
 	}
 	.item:nth-child(6){
-		height: 370px;
+		height: 350px;
 		order: 6;
 	}
 	
@@ -587,7 +591,6 @@ body {
 	.btn_smart_down{
 		display: flex;
 		flex-wrap: nowrap;
-		padding: 0;
 		padding: 100px 0 20px;
 		left: 20px;
 	}	
@@ -665,7 +668,7 @@ body {
 	}
 
 	.football_img{
-	    right: 15%;
+	    left: 70px;
 	    margin-top: 80px;
 	}
 
