@@ -1,5 +1,5 @@
 @font-face{
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSans';
   src: url(../font/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -104,7 +104,7 @@ body {
 	border: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 }
 
 .btn_span{
@@ -226,9 +226,9 @@ body {
 .section_players{
 	max-width: 800px;
 }
-.section_players p{
+.text_sect{
 	font-size: 20px;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 }
 .name_section{
 	text-transform: uppercase;
@@ -236,11 +236,6 @@ body {
 	font-family: OpenSans;
 	font-weight: bold;
 	color: #c1c1c1;
-}
-
-.section p{
-	font-size: 20px;
-	font-family: OpenSansRegular;
 }
 
 .work_section{
@@ -257,7 +252,7 @@ body {
     width: 100%;
 }
 
-.item {
+.item_text_one {
     height: 760px;
     background-size: cover;
     background-position: center center;
@@ -267,15 +262,51 @@ body {
 
 }
 
-.item:nth-child(1){
+.item_text_two{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_text_three{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_one{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/be-active.jpg);
 }
 
-.item:nth-child(4){
+.item_two{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/find-contact.jpg);
 }
 
-.item:nth-child(5){
+.item_three{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/work-it.jpg);
 }
 
@@ -294,7 +325,7 @@ body {
  	text-align: left;
     left: 110px;
     padding-bottom: 50px;
-    font-family: OpenSansRegular;
+    font-family: OpenSans;
 }
 .upper_txt{
 	display: block;
@@ -374,7 +405,7 @@ body {
 	letter-spacing: 5px;
 	font-size: 30px;
 	text-transform: uppercase;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 	z-index: 2;
 	color: #fff;
 }
@@ -493,43 +524,43 @@ body {
 		font-size: 32px;
 	}
 
-	.section p{
+	.text_sect{
 		font-size: 16px;
 	}
 
-	.section_players p{
-		font-size: 16px;
-	}
-
-	.item{
-		flex: 100%;
-	}
-	.item:nth-child(1){
+	
+	.item_one{
 		background-image: url(../img/be-active_960.jpg);
 		height: 585px;
 		order: 1;
+		flex: 100%;
 	}
-	.item:nth-child(2){
+	.item_text_one{
 		height: 320px;
 		order: 2;
+		flex: 100%;
 	}
-	.item:nth-child(4){
+	.item_two{
 		background-image: url(../img/find-contact_960.jpg);
 		height: 585px;
 		order: 3;
+		flex: 100%;
 	}
-	.item:nth-child(3){
+	.item_text_two{
 		height: 320px;
 		order: 4;
+		flex: 100%;
 	}
-	.item:nth-child(5){
+	.item_three{
 		background-image: url(../img/work-it_960.jpg);
 		height: 585px;
 		order: 5;
+		flex: 100%;
 	}
-	.item:nth-child(6){
+	.item_text_three{
 		height: 350px;
 		order: 6;
+		flex: 100%;
 	}
 	
 	.img_work {
@@ -683,7 +714,7 @@ body {
 		font-size: 23px;
 	}
 
-	.section p{
+	.text_sect{
 		font-size: 15px;
 	}
 
@@ -700,10 +731,6 @@ body {
 
 	.section_players{
 		width: 100%;
-	}
-
-	.section_players p{
-		font-size: 15px;
 	}
 
 	.badge{
@@ -766,14 +793,14 @@ body {
 	.logo_down{
 		width: 160px;
 	}
-	.item:nth-child(1),
-	.item:nth-child(4),
-	.item:nth-child(5){
+	.item_one,
+	.item_two,
+	.item_three{
 		height: 350px;
 	}
-	.item:nth-child(2),
-	.item:nth-child(3),
-	.item:nth-child(6){
+	.item_text_one,
+	.item_text_two,
+	.item_text_three{
 		height: 212px;
 	}
 
