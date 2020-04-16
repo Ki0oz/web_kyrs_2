@@ -1,5 +1,5 @@
 @font-face{
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSans';
   src: url(../font/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -104,7 +104,7 @@ body {
 	border: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 }
 
 .btn_span{
@@ -133,7 +133,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #e7e7e7;
-	left: 50%;
+	left: 780px;
 	position: relative;
 	margin-left: 45px;
 }
@@ -210,25 +210,25 @@ body {
 }
 .football_img{
 	position: absolute;
-	right: 50%;
+	left: 400px;
 }
 .basketball_img{
 	position: absolute;
-	left: 43%;
+	right: 40px;
 }
 .section{
 	position: relative;
-	left: 50%;
+	left: 780px;
 	margin-left: 45px;
-	width: 50%;
+	max-width: 800px;
 }
 
 .section_players{
-	width: 55%;
+	max-width: 800px;
 }
-.section_players p{
+.text_sect{
 	font-size: 20px;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 }
 .name_section{
 	text-transform: uppercase;
@@ -236,11 +236,6 @@ body {
 	font-family: OpenSans;
 	font-weight: bold;
 	color: #c1c1c1;
-}
-
-.section p{
-	font-size: 20px;
-	font-family: OpenSansRegular;
 }
 
 .work_section{
@@ -257,7 +252,7 @@ body {
     width: 100%;
 }
 
-.item {
+.item_text_one {
     height: 760px;
     background-size: cover;
     background-position: center center;
@@ -267,15 +262,51 @@ body {
 
 }
 
-.item:nth-child(1){
+.item_text_two{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_text_three{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_one{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/be-active.jpg);
 }
 
-.item:nth-child(4){
+.item_two{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/find-contact.jpg);
 }
 
-.item:nth-child(5){
+.item_three{
+	height: 760px;
+    background-size: cover;
+    background-position: center center;
+    flex: 50%;
+    box-sizing: border-box;
+    position: relative;
 	background-image: url(../img/work-it.jpg);
 }
 
@@ -286,15 +317,15 @@ body {
     margin-top: 200px;
 }
 
- .cont_title{
+.cont_title{
 	display: inline-block;
   	position: relative;
  	font-size: 24px;
- 	width: 65%;
+ 	max-width: 600px;
  	text-align: left;
     left: 110px;
     padding-bottom: 50px;
-    font-family: OpenSansRegular;
+    font-family: OpenSans;
 }
 .upper_txt{
 	display: block;
@@ -336,8 +367,8 @@ body {
 .footer_surface::after {
 	content:"";
 	position: absolute;
-	top: 0px;
-	left: 0px; 
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #02002c;
@@ -374,7 +405,7 @@ body {
 	letter-spacing: 5px;
 	font-size: 30px;
 	text-transform: uppercase;
-	font-family: OpenSansRegular;
+	font-family: OpenSans;
 	z-index: 2;
 	color: #fff;
 }
@@ -385,7 +416,7 @@ body {
 }
 
 .btn_smart_down{
-	width: 90%;
+	width: 100%;
 	position: relative;
 	z-index: 2;
 	margin-left: auto;
@@ -418,17 +449,21 @@ body {
 
 }
 
-@media (max-width: 1130px){
+@media  (max-width: 1130px){
 	.wrapper{
 		padding:0;
 	}
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	
 	.header{
 		background-image: url(../img/football_767.jpg);
+		min-width: 768px;
+	}
+	.main_sport, .footer_surface{
+		min-width: 768px;
 	}
 
 	.wrapper{
@@ -456,24 +491,22 @@ body {
 	.btn_smart{
 		display: flex;
 		flex-wrap: nowrap;
-		padding: 0;
 		padding-top: 150px;
 		left: 20px;
 	}
 
-
 	.football_img{
 		margin-top: 100px;
-		right: 55%;
+		left: -170px;
 	}
 
 	.basketball_img{
-		max-width: 100%;
 		padding-top: 30px;
-		clear:both;
+		right: 0;
 	}
 
 	.type_title{
+		left: 250px;
 		padding-top: 45px;
 		margin: 0;
 	}
@@ -483,49 +516,55 @@ body {
 	}
 	.section{
 		margin-left: 0;
+		left: 250px;
+		max-width: 440px;
+	}
+
+	.section_players {
+		max-width: 400px;
 	}
 
 	.name_section{
 		font-size: 32px;
 	}
 
-	.section p{
+	.text_sect{
 		font-size: 16px;
 	}
 
-	.section_players p{
-		font-size: 16px;
-	}
-
-	.item{
-		flex: 100%;
-	}
-	.item:nth-child(1){
+	
+	.item_one{
 		background-image: url(../img/be-active_960.jpg);
 		height: 585px;
 		order: 1;
+		flex: 100%;
 	}
-	.item:nth-child(2){
-		height: 370px;
+	.item_text_one{
+		height: 320px;
 		order: 2;
+		flex: 100%;
 	}
-	.item:nth-child(4){
+	.item_two{
 		background-image: url(../img/find-contact_960.jpg);
 		height: 585px;
 		order: 3;
+		flex: 100%;
 	}
-	.item:nth-child(3){
-		height: 370px;
+	.item_text_two{
+		height: 320px;
 		order: 4;
+		flex: 100%;
 	}
-	.item:nth-child(5){
+	.item_three{
 		background-image: url(../img/work-it_960.jpg);
 		height: 585px;
 		order: 5;
+		flex: 100%;
 	}
-	.item:nth-child(6){
-		height: 370px;
+	.item_text_three{
+		height: 350px;
 		order: 6;
+		flex: 100%;
 	}
 	
 	.img_work {
@@ -587,13 +626,12 @@ body {
 	.btn_smart_down{
 		display: flex;
 		flex-wrap: nowrap;
-		padding: 0;
 		padding: 100px 0 20px;
 		left: 20px;
 	}	
 }
 
-@media screen and (max-width: 590px) {
+@media (max-width: 590px) {
 	.btn_ic{
 		width: 30px;
 	}
@@ -613,6 +651,10 @@ body {
 @media screen and (max-width: 320px) {
 	.header{
 		min-height: 568px;
+		min-width:400px;
+	}
+	.main_sport, .footer_surface{
+		min-width: 400px;
 	}
 	.header_title{
 		width: 100%;
@@ -665,7 +707,7 @@ body {
 	}
 
 	.football_img{
-	    right: 15%;
+	    left: 110px;
 	    margin-top: 80px;
 	}
 
@@ -680,7 +722,7 @@ body {
 		font-size: 23px;
 	}
 
-	.section p{
+	.text_sect{
 		font-size: 15px;
 	}
 
@@ -697,10 +739,6 @@ body {
 
 	.section_players{
 		width: 100%;
-	}
-
-	.section_players p{
-		font-size: 15px;
 	}
 
 	.badge{
@@ -763,14 +801,14 @@ body {
 	.logo_down{
 		width: 160px;
 	}
-	.item:nth-child(1),
-	.item:nth-child(4),
-	.item:nth-child(5){
+	.item_one,
+	.item_two,
+	.item_three{
 		height: 350px;
 	}
-	.item:nth-child(2),
-	.item:nth-child(3),
-	.item:nth-child(6){
+	.item_text_one,
+	.item_text_two,
+	.item_text_three{
 		height: 212px;
 	}
 
