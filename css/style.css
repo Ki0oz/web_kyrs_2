@@ -1,5 +1,5 @@
 @font-face{
-  font-family: 'OpenSans';
+  font-family: 'OpenSansRegular';
   src: url(../font/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -104,7 +104,7 @@ body {
 	border: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: OpenSans;
+	font-family: OpenSansRegular;
 }
 
 .btn_span{
@@ -133,7 +133,7 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #e7e7e7;
-	left: 780px;
+	left: 50%;
 	position: relative;
 	margin-left: 45px;
 }
@@ -210,25 +210,25 @@ body {
 }
 .football_img{
 	position: absolute;
-	left: 400px;
+	right: 50%;
 }
 .basketball_img{
 	position: absolute;
-	right: 40px;
+	left: 43%;
 }
 .section{
 	position: relative;
-	left: 780px;
+	left: 50%;
 	margin-left: 45px;
-	max-width: 800px;
+	width: 50%;
 }
 
 .section_players{
-	max-width: 800px;
+	width: 55%;
 }
-.text_sect{
+.section_players p{
 	font-size: 20px;
-	font-family: OpenSans;
+	font-family: OpenSansRegular;
 }
 .name_section{
 	text-transform: uppercase;
@@ -236,6 +236,11 @@ body {
 	font-family: OpenSans;
 	font-weight: bold;
 	color: #c1c1c1;
+}
+
+.section p{
+	font-size: 20px;
+	font-family: OpenSansRegular;
 }
 
 .work_section{
@@ -252,7 +257,7 @@ body {
     width: 100%;
 }
 
-.item_text_one {
+.item {
     height: 760px;
     background-size: cover;
     background-position: center center;
@@ -262,51 +267,15 @@ body {
 
 }
 
-.item_text_two{
-	height: 760px;
-    background-size: cover;
-    background-position: center center;
-    flex: 50%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.item_text_three{
-	height: 760px;
-    background-size: cover;
-    background-position: center center;
-    flex: 50%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.item_one{
-	height: 760px;
-    background-size: cover;
-    background-position: center center;
-    flex: 50%;
-    box-sizing: border-box;
-    position: relative;
+.item:nth-child(1){
 	background-image: url(../img/be-active.jpg);
 }
 
-.item_two{
-	height: 760px;
-    background-size: cover;
-    background-position: center center;
-    flex: 50%;
-    box-sizing: border-box;
-    position: relative;
+.item:nth-child(4){
 	background-image: url(../img/find-contact.jpg);
 }
 
-.item_three{
-	height: 760px;
-    background-size: cover;
-    background-position: center center;
-    flex: 50%;
-    box-sizing: border-box;
-    position: relative;
+.item:nth-child(5){
 	background-image: url(../img/work-it.jpg);
 }
 
@@ -317,15 +286,15 @@ body {
     margin-top: 200px;
 }
 
-.cont_title{
+ .cont_title{
 	display: inline-block;
   	position: relative;
  	font-size: 24px;
- 	max-width: 600px;
+ 	width: 65%;
  	text-align: left;
     left: 110px;
     padding-bottom: 50px;
-    font-family: OpenSans;
+    font-family: OpenSansRegular;
 }
 .upper_txt{
 	display: block;
@@ -367,8 +336,8 @@ body {
 .footer_surface::after {
 	content:"";
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px; 
 	width: 100%;
 	height: 100%;
 	background-color: #02002c;
@@ -405,7 +374,7 @@ body {
 	letter-spacing: 5px;
 	font-size: 30px;
 	text-transform: uppercase;
-	font-family: OpenSans;
+	font-family: OpenSansRegular;
 	z-index: 2;
 	color: #fff;
 }
@@ -416,7 +385,7 @@ body {
 }
 
 .btn_smart_down{
-	width: 100%;
+	width: 90%;
 	position: relative;
 	z-index: 2;
 	margin-left: auto;
@@ -487,22 +456,24 @@ body {
 	.btn_smart{
 		display: flex;
 		flex-wrap: nowrap;
+		padding: 0;
 		padding-top: 150px;
 		left: 20px;
 	}
 
+
 	.football_img{
 		margin-top: 100px;
-		left: -170px;
+		right: 55%;
 	}
 
 	.basketball_img{
+		max-width: 100%;
 		padding-top: 30px;
-		right: 0;
+		clear:both;
 	}
 
 	.type_title{
-		left: 250px;
 		padding-top: 45px;
 		margin: 0;
 	}
@@ -512,55 +483,49 @@ body {
 	}
 	.section{
 		margin-left: 0;
-		left: 250px;
-		max-width: 440px;
-	}
-
-	.section_players {
-		max-width: 400px;
 	}
 
 	.name_section{
 		font-size: 32px;
 	}
 
-	.text_sect{
+	.section p{
 		font-size: 16px;
 	}
 
-	
-	.item_one{
+	.section_players p{
+		font-size: 16px;
+	}
+
+	.item{
+		flex: 100%;
+	}
+	.item:nth-child(1){
 		background-image: url(../img/be-active_960.jpg);
 		height: 585px;
 		order: 1;
-		flex: 100%;
 	}
-	.item_text_one{
-		height: 320px;
+	.item:nth-child(2){
+		height: 370px;
 		order: 2;
-		flex: 100%;
 	}
-	.item_two{
+	.item:nth-child(4){
 		background-image: url(../img/find-contact_960.jpg);
 		height: 585px;
 		order: 3;
-		flex: 100%;
 	}
-	.item_text_two{
-		height: 320px;
+	.item:nth-child(3){
+		height: 370px;
 		order: 4;
-		flex: 100%;
 	}
-	.item_three{
+	.item:nth-child(5){
 		background-image: url(../img/work-it_960.jpg);
 		height: 585px;
 		order: 5;
-		flex: 100%;
 	}
-	.item_text_three{
-		height: 350px;
+	.item:nth-child(6){
+		height: 370px;
 		order: 6;
-		flex: 100%;
 	}
 	
 	.img_work {
@@ -622,6 +587,7 @@ body {
 	.btn_smart_down{
 		display: flex;
 		flex-wrap: nowrap;
+		padding: 0;
 		padding: 100px 0 20px;
 		left: 20px;
 	}	
@@ -699,7 +665,7 @@ body {
 	}
 
 	.football_img{
-	    left: 70px;
+	    right: 15%;
 	    margin-top: 80px;
 	}
 
@@ -714,7 +680,7 @@ body {
 		font-size: 23px;
 	}
 
-	.text_sect{
+	.section p{
 		font-size: 15px;
 	}
 
@@ -731,6 +697,10 @@ body {
 
 	.section_players{
 		width: 100%;
+	}
+
+	.section_players p{
+		font-size: 15px;
 	}
 
 	.badge{
@@ -793,14 +763,14 @@ body {
 	.logo_down{
 		width: 160px;
 	}
-	.item_one,
-	.item_two,
-	.item_three{
+	.item:nth-child(1),
+	.item:nth-child(4),
+	.item:nth-child(5){
 		height: 350px;
 	}
-	.item_text_one,
-	.item_text_two,
-	.item_text_three{
+	.item:nth-child(2),
+	.item:nth-child(3),
+	.item:nth-child(6){
 		height: 212px;
 	}
 
