@@ -648,6 +648,13 @@ body {
 		font-size: 24px;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.header,.main_sport, .footer_surface{
+		min-width: 375px;
+	}
+}
+
 @media screen and (max-width: 320px) {
 	.header{
 		min-height: 568px;
