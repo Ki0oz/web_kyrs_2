@@ -649,13 +649,8 @@ body {
 	}
 }
 
-@media screen and (max-width: 375px) {
-	.header,.main_sport, .footer_surface{
-		min-width: 375px;
-	}
-}
-
 @media screen and (max-width: 320px) {
+
 	.header{
 		min-height: 568px;
 		min-width: 320px;
@@ -691,11 +686,12 @@ body {
 		padding: 0;
 	}
 
-	.button{
-		width: 100%;
-		margin-top: 20px;
-		height: 35px; 
-		padding: 0 30px;
+	.button {
+	    margin-top: 20px;
+	    height: 35px;
+	    padding: 0 30px;
+	    width: 260px;
+	    margin: 10px auto;
 	}
 
 	.btn_ic{
@@ -798,11 +794,11 @@ body {
 		letter-spacing: normal;
 	}
 
-	.btn_smart_down{
-		display: block;
-		left: 0;
-		margin-top: 50px;
-		padding: 0;
+	.btn_smart_down {
+	    left: 0;
+	    margin-top: 50px;
+	    padding: 0;
+	    flex-wrap: wrap;
 	}
 
 	.logo_down{
