@@ -651,10 +651,10 @@ body {
 @media screen and (max-width: 320px) {
 	.header{
 		min-height: 568px;
-		min-width:400px;
+		min-width: 320px;
 	}
 	.main_sport, .footer_surface{
-		min-width: 400px;
+		min-width: 320px;
 	}
 	.header_title{
 		width: 100%;
@@ -707,7 +707,7 @@ body {
 	}
 
 	.football_img{
-	    left: 110px;
+	    left: 70px;
 	    margin-top: 80px;
 	}
 
